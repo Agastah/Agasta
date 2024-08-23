@@ -1,0 +1,92 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(45deg, #1c1c1c, #1639d4, #0f2027, #2c5364);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #f4f4f4;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  max-width: 800px;
+  width: 90%;
+  background-color: rgba(44, 44, 44, 0.5); /* Transparansi 0.7 */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  z-index: 1;
+  padding: 20px;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.4em;
+  color: #ffffff;
+}
+
+.intro, .links {
+  padding: 30px;
+  text-align: center;
+}
+
+.intro h2, .links h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.intro p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.links .link-item {
+  margin: 15px 0;
+}
+
+.links .link-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 1.4em;
+  transition: color 0.3s ease;
+}
+
+.links .link-item a:hover {
+  color: #4447e0;
+}
+
+.logo {
+  font-size: 2em;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.links .link-item a:hover .logo {
+  transform: scale(1.2);
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
